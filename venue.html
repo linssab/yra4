@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>YRA 2021 | Venue</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMS9gzJeIKUjYH8T4gwCwsalKK1kija14&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+  <style type="text/css">
+    #map {
+      width:57%;
+      height: 350px;
+      margin-right: 5%;
+	    float: right;
+      background: coral;
+    }
+  </style>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = {  lat: 38.572843239350696, lng: -7.903726444166584 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+</head>
+<body>
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <ul>
+        <li><a href="index.html">Information</a></li>
+        <li><a href="#" class="active">Venue</a></li>
+        <li><a href="organization.html">Organization</a></li>
+        <li><a href="register.html">Register</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section id="video-venue" class="venue">
+  <h1>YRA 2021 happens in Évora, Portugal!</h1>
+  <div>
+    <a href="https://www.uevora.pt/en" target=blank><img src=images/uevora.png alt="" class="logo-right"></a>
+  </div>
+</section>
+<section id="main-content">
+  <div class="text-intro">
+    <h2>Where is it?</h2>
+    Évora is a historical city in the Alentejo region, in the southern-central part of Portugal. This city is the capital of the Évora district and the only Portuguese city member of the Most Ancient European Τοwn's Network.  It's historical center has been recognized as a UNESCO world heritage site in 1986.
+  </div>
+  <div class="columns">
+    <div class="img-first"><a href="./images/fonte.jpg" target="blank"><img src="images/fonte.jpg" alt=""></a></div>
+    <div class="img-second"><a href="./images/uevora.jpg" target="blank"><img src="images/uevora.jpg" alt=""></a></div>
+  </div>
+  <div class="description">
+    <h2>How to get to Évora</h2>
+    Reaching Évora is super simple and we want to be sure you will reach it with no worries. Just follow the instructions below or download our pdf in case you may end up with no mobile data when landing in Portugal. 
+    <br>
+    <br>
+    <br>
+    <div id="map">
+    </div>
+    <div id="maps-left">
+      The historical city of Évora can be reached by train or bus from Lisbon airport. Both bus and train stations in Lisbon can be reached with the metro, 
+      straight out of the airport. The bus stop in Évora is closer to the historical centre than the train station, and the timetables are more convenient.
+      The corresponding metro stops for the bus and train stations are Sete Rios and Oriente, respectively.
+      <br>
+      Metro tickets can be bought at the station, right in front of the airport exit. They cost 1.50€, and do not forget to keep the ticket with you so you can exit the station! You can find the buses schedules <a href="https://www.rede-expressos.pt/en?gclid=CjwKCAiAoOz-BRBdEiwAyuvA6wTElbP8gzT9FFf7p7yTeyWSZcpCWKoiHM7vVUWJn3K2L_2ZOTIXShoCc_sQAvD_BwE" target="blank">here</a>
+      and the trains, <a href="https://www.cp.pt//passageiros/pt" target="blank">here</a>.
+      <br>
+      <a href="./DIRECTIONS_TO_EVORA.pdf" target="blank"><img src=images/download.png alt="" class="download_ico"></a>
+    </div>
+  </div>
+</section>
+</body>
+<footer>
+  <div class="copyright"><small>Copyright <b>Sergio Lins</b> | Template obtained under Creative Commons licence, provided by <a target="_blank" rel="nofollow" href="http://www.iamsupview.be">Supview</a></small></div>
+</footer>
+</html>
