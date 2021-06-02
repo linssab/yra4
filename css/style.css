@@ -551,12 +551,14 @@ footer .copyright a:hover {
 	cursor:hand;
 	font-size:20px;
 	color:#FFF;
-	background-color:#e00966;
+	background-color: #515151;
 	font-family:"Open Sans", sans-serif;
 	transition:all 0.5s ease-in-out;
 }
 #submission-panel .btn-proposal:hover {
-	background-color:#e187ae;
+	/*background-color:#e187ae;
+	 * */
+	background-color:#515151;
 	color:#FFF;
 }
 #submission-panel .btn-abstract {
@@ -569,12 +571,16 @@ footer .copyright a:hover {
 	cursor:hand;
 	font-size:20px;
 	color:#FFF;
-	background-color:#e00966;
+	/*background-color:#e00966;
+	 * */
+	background-color: #515151;
 	font-family:"Open Sans", sans-serif;
 	transition:all 0.5s ease-in-out;
 }
 #submission-panel .btn-abstract:hover {
-	background-color:#e187ae;
+	/*background-color:#e187ae;
+	 * */
+	background-color: #515151;
 	color:#FFF;
 }
 #submission-panel .btn-register {
